@@ -39,7 +39,9 @@ public class IniciarSesionVentana extends javax.swing.JFrame {
             lg = login.log(correo, password);{
             if(lg.getCorreo()!=null && lg.getPassword()!=null){
                     
-            JOptionPane.showMessageDialog(null, "Ingreso Exitoso");
+            Principal newframe = new Principal();      
+            newframe.setVisible(true); 
+            this.dispose();
             }
             else{
                   JOptionPane.showMessageDialog(null, "Credenciales Invalidas");

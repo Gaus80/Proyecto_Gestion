@@ -20,7 +20,7 @@ public class Principal extends javax.swing.JFrame {
         initComponents();
         menu.setContentAreaFilled(false); // Quitar el fondo
         menu.setBorderPainted(false);
-
+        this.setLocationRelativeTo(null);
         new CambiaPanel(panelMain,new panelProductos());
                 
     }
